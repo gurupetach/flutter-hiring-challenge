@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+import 'onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -43,12 +44,15 @@ class _SplashScreenState extends State<SplashScreen>
     // Start animation
     _animationController.forward();
     
-    // Navigate to next screen after delay
+    // Navigate to onboarding screen after delay
     Timer(const Duration(seconds: 3), () {
-      // TODO: Navigate to onboarding screen
-      // For now, we'll just restart the animation
-      _animationController.reset();
-      _animationController.forward();
+      if (mounted) {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (context) => const OnboardingScreen(),
+          ),
+        );
+      }
     });
   }
 
