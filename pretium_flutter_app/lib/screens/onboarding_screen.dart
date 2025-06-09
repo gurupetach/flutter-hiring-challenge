@@ -14,10 +14,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   final List<OnboardingPage> _pages = [
     OnboardingPage(
-      icon: Icons.receipt_long,
-      title: 'Pay Bills',
-      description: 'Pay for utility services and earn rewards',
-      buttonText: 'Get Started',
+      icon: Icons.credit_card,
+      title: 'Direct Pay',
+      description: 'Pay with crypto across Africa effortlessly',
+      buttonText: 'Next',
     ),
     OnboardingPage(
       icon: Icons.account_balance_wallet,
@@ -26,10 +26,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       buttonText: 'Next',
     ),
     OnboardingPage(
-      icon: Icons.credit_card,
-      title: 'Direct Pay',
-      description: 'Pay with crypto across Africa effortlessly',
-      buttonText: 'Next',
+      icon: Icons.receipt_long,
+      title: 'Pay Bills',
+      description: 'Pay for utility services and earn rewards',
+      buttonText: 'Get Started',
     ),
   ];
 
